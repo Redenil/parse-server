@@ -12,10 +12,10 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: process.env.MONGODB_URI,
+  databaseURI: 'mongodb://heroku_x6qtnrc9:q9a8tvu0rpcro12h6endhfc8fv@ds161518.mlab.com:61518/heroku_x6qtnrc9',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID,
-  masterKey: process.env.MASTER_KEY, //Add your master key here. Keep it secret!
+  appId: 'meal-deal',
+  masterKey: 'mealdealkey', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL,  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
