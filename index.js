@@ -44,12 +44,6 @@ app.get('/test', function (req, res) {
   res.sendFile(path.join(__dirname, '/public/test.html'));
 });
 
-app.all('*', function(req, res, next) { 
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS'); 
-  res.header('Access-Control-Allow-Headers', 'Content-Type'); 
-  next(); 
-});
 
 var port = process.env.PORT || 1337;
 var httpServer = require('http').createServer(app);
