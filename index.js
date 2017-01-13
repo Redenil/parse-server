@@ -16,8 +16,8 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: 'meal-deal',
   masterKey: 'mealdealkey', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL,  // Don't forget to change to https if needed
-  javascriptKey: process.env.JAVA_SCRIPT_KEY,
+  serverURL: 'http://meal-deal.herokuapp.com',  // Don't forget to change to https if needed
+  javascriptKey: 'mealDealJsKey',
   verbose: true
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
