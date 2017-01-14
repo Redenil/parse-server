@@ -18,6 +18,7 @@ var api = new ParseServer({
   masterKey: 'mealdealkey', //Add your master key here. Keep it secret!
   serverURL: 'https://mealdeal2017.herokuapp.com',  // Don't forget to change to https if needed
   javascriptKey: 'mealDealJsKey',
+  publicServerURL :'https://mealdeal2017.herokuapp.com/parse',
   verbose: true
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
