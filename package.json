@@ -15,7 +15,7 @@
     "parse-server": "^2.3.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node init && node index.js"
   },
   "engines": {
     "node": ">=4.3"
