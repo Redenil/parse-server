@@ -20,7 +20,8 @@ var api = new ParseServer({
   javascriptKey: 'mealDealJsKey',
   publicServerURL :'http://mealdeal2017.herokuapp.com/parse',
   fileKey : 'mealdealFileKey',
-  verbose: true
+  verbose: true,
+  enableAnonymousUsers : false
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
